@@ -1,23 +1,24 @@
-programa {
-  funcao inicio() {
-    real nota1,nota2,nota3,nota4,media
-    escreva("digite a sua primeira nota:")
-    leia (nota1)
+programa
+{
+	funcao inicio()
+	{
+		// Declaração das variáveis como real para aceitar decimais
+		real nota1, nota2, nota3, nota4, media
 
-    escreva("digite a sugunda nota:")
-    leia(nota2)
+		// Entrada de dados
+		escreva("Digite a primeira nota: ")
+		leia(nota1)
+		escreva("Digite a segunda nota: ")
+		leia(nota2)
+		escreva("Digite a terceira nota: ")
+		leia(nota3)
+		escreva("Digite a quarta nota: ")
+		leia(nota4)
 
-    escreva("digite a terceira nota:")
-    leia(nota3)
+		// Cálculo da média
+		media = (nota1 + nota2 + nota3 + nota4) / 4
 
-    escreva("digite a quarta nota:")
-    leia(nota4)
-    //calcular media
-    media= (nota1+nota2+nota3+nota4)/4
-
-    //exibir resultado
-    escreva("a media final é :media")
-
-
-  }
+		// Exibição do resultado
+		escreva("A média final é: ", media)
+	}
 }
