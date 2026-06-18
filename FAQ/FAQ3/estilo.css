@@ -16,6 +16,9 @@ nav a{
     text-decoration: none;
     margin: 10px;
 }
+nav a:hover {
+    color: #4b5657 !important; 
+}
 
 main{
     width: 80%;
