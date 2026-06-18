@@ -1,0 +1,55 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+header{
+    background-color: #982a2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.card{
+    background-color: white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+h2{
+    color: #000000;
+}
+
+.faq{
+    margin-bottom: 15px;
+}
+
+.faq h3{
+    color: #333;
+}
+
+.voltar{
+    display: inline-block;
+    background-color: #982a2a;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.voltar:hover{
+    background-color: #00000000;
+}
