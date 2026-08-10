@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Club Internacional | O Colorado</title>
+    <style>
+        /* Base Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Header / Navbar */
+        header {
+            background-color: #dd0000; /* Inter Red */
+            color: #ffffff;
+            padding: 30px 20px 20px 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-style: italic;
+            opacity: 0.9;
+            font-size: 1.2rem;
+        }
+
+        /* Sticky Navigation Bar */
+        nav {
+            background-color: #b30000;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #dd0000;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Sections Styling */
+        section {
+            background-color: #ffffff;
+            margin-bottom: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border-left: 6px solid #dd0000;
+        }
+
+        h2 {
+            color: #dd0000;
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-card {
+            background-color: #fff5f5;
+            padding: 20px;
+            border-radius: 6px;
+            border: 1px solid #ffe0e0;
+        }
+
+        .info-card h3 {
+            color: #dd0000;
+            margin-bottom: 8px;
+        }
+
+        /* Trophy Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #dd0000;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Idol List Grid */
+        .idols-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .idol-card {
+            background: #fdfdfd;
+            border: 1px solid #eaeaea;
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .idol-card h3 {
+            color: #dd0000;
+            margin-bottom: 5px;
+        }
+
+        .idol-card em {
+            color: #666;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        /* Stadium / Matchday Feature widget */
+        .stadium-widget {
+            background: linear-gradient(135deg, #dd0000 0%, #990000 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .stadium-widget h3 {
+            margin-bottom: 10px;
+            font-size: 1.4rem;
+        }
+
+        .stadium-widget p {
+            color: #fff;
+            opacity: 0.95;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav ul li a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Sport Club Internacional</h1>
+        <p>Clube do Povo - Porto Alegre, RS</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#sobre">História</a></li>
+            <li><a href="#perfil">Ficha Técnica</a></li>
+            <li><a href="#titulos">Principais Conquistas</a></li>
+            <li><a href="#idolos">Grandes Ídolos</a></li>
+            <li><a href="#estadio">Santuário Beira-Rio</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        
+        <!-- About Section -->
+        <section id="sobre">
+            <h2>História</h2>
+            <p>Fundado em 4 de abril de 1909 pelos irmãos Poppe, o Sport Club Internacional nasceu com a premissa de ser uma instituição democrática, livre de preconceitos e aberta a todas as origens. Conhecido carinhosamente como "Inter" ou "Colorado", o clube construiu uma das trajetórias mais vitoriosas e tradicionais do futebol brasileiro e mundial.</p>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="perfil">
+            <h2>Ficha Técnica</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Fundação</h3>
+                    <p>4 de abril de 1909</p>
+                </div>
+                <div class="info-card">
+                    <h3>Cores Oficiais</h3>
+                    <p>Vermelho e Branco</p>
+                </div>
+                <div class="info-card">
+                    <h3>Mascote</h3>
+                    <p>O Saci</p>
+                </div>
+                <div class="info-card">
+                    <h3>Alcunhas</h3>
+                    <p>Colorado, O Clube do Povo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trophies Section -->
+        <section id="titulos">
+            <h2>Principais Conquistas</h2>
+            <p>O Internacional possui uma sala de troféus invejável, destacando-se por suas conquistas invictas e glórias internacionais.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Competição</th>
+                        <th>Quantidade</th>
+                        <th>Anos das Conquistas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Mundial de Clubes da FIFA</strong></td>
+                        <td>1</td>
+                        <td>2006</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Copa Libertadores da América</strong></td>
+                        <td>2</td>
+                        <td>2006, 2010</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Copa Sul-Americana</strong></td>
+                        <td>1</td>
+                        <td>2008</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Recopa Sul-Americana</strong></td>
+                        <td>2</td>
+                        <td>2007, 2011</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Campeonato Brasileiro</strong></td>
+                        <td>3</td>
+                        <td>1975, 1976, 1979 <small>(Campeão Invicto)</small></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Copa do Brasil</strong></td>
+                        <td>1</td>
+                        <td>1992</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Grand Idols Section -->
+        <section id="idolos">
+            <h2>Grandes Ídolos</h2>
+            <p>A história colorada foi moldada por craques eternos que honraram o manto vermelho em momentos cruciais.</p>
+            
+            <div class="idols-grid">
+                <div class="idol-card">
+                    <h3>Fernandão</h3>
+                    <em>Atacante • Camisa 9 Eterno</em>
+                    <p>O capitão do primeiro título da Libertadores e do Mundial de Clubes em 2006. Líder nato, iluminado e símbolo máximo de raça e paixão colorada.</p>
+                </div>
+                <div class="idol-card">
+                    <h3>Falcão</h3>
+                    <em>Volante • O Rei de Roma</em>
+                    <p>Um dos maiores meio-campistas da história do futebol mundial. Foi a mente genial por trás do tricampeonato brasileiro nos anos 70, incluindo a campanha invicta de 1979.</p>
+                </div>
+                <div class="idol-card">
+                    <h3>D'Alessandro</h3>
+                    <em></em>
