@@ -1,0 +1,106 @@
+:root{
+    --cor-primaria: antiquewhite;
+    --cor-segundaria: #8B5E3C;
+    --cor-fonte: #ffff;
+
+}
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.form{
+    background-color:var(--cor-primaria);
+    
+}
+.cabecalho {
+     padding: 2% 0%; 
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 30px;
+}
+
+.cabecalho__menu__link {
+   text-decoration: none;
+   color: var(--cor-fonte);
+   font-size: 30px;
+}
+
+
+ body {
+    margin: 0;
+    background: linear-gradient(to left, #F3E4C9 75%, #8B5E3C 50%);
+    text-decoration: none; 
+    color: #34271b;
+ }  
+
+
+.campo{
+    text-align: center;
+    padding: 0.2em;
+}
+
+#titulo{
+    text-align: center;
+    /* margin-left: 120px; */
+}
+
+#subtitulo{
+    text-align: center;
+}
+.nome{
+    margin-left: 550px;
+}
+.idade{
+    margin-left: 550px;
+}
+.telefone{
+    margin-left: 550px;
+}
+.raca{
+    margin-left:550px ;
+}
+
+.campos{
+margin-left: 550px;
+}
+
+.precaucao{
+    margin-left: 550px;
+}
+.foto{
+    
+    transform: rotate(-10deg);
+    margin-top: -100px;
+    margin-left: -50px;
+    display: block;
+    width: 200px; 
+    height: 100px; 
+}
+
+
+.foto2{
+    margin-top: -300px;
+    margin-left: 100px;
+    animation: ease-in 1s  2ms left ;
+    opacity: 1;
+    display: block;
+    width: 200px; 
+    height: 100px;
+}
+
+/* @keyframes{
+
+transform: rotate(20%);
+
+{
+    transform:rotate(25%)
+}
+{
+    transform:rotate(50%)
+} */
